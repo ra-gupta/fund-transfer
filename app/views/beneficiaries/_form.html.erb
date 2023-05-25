@@ -1,0 +1,19 @@
+<div align="center">
+<%= form_for beneficiary do |f| %>
+  <div class="row">
+    <div class="col">
+      <%= t '.acc_number' %><%= f.text_field :account_number, class: "form-control col-md-2" %>
+      <%= t '.nick_name' %><%= f.text_field :nick_name, class: "form-control col-md-2" %> <br/>
+    </div>
+  </div>
+  <%# Create's a drop down for list of bank accounts %>
+
+  <%# f.collection_select :id, Bank.order(:name), :id, :name,{ include_blank: true },required: true,  class: "btn btn-primary dropdown-toggle" %>
+  <% f.button t('.otp'),name: "send_otp",class: "btn btn-outline-secondary" %>
+  <br/>
+  <% if false %><br>
+    <% f.text_field :pin, class: "form-control col-md-2", placeholder: "Enter otp" %><br/>
+    <%= f.submit t('.add_beneficiary'),class: "btn btn-outline-secondary" %>
+  <% end %>
+<% end %><br/>
+</div>

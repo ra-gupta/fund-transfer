@@ -1,0 +1,4 @@
+<h2><%= t '.list' %></h2>
+<%= render 'beneficiary_list', beneficiary_list: @beneficiaries %>
+<%= will_paginate @beneficiaries, renderer: BootstrapPagination::Rails %>
+<%= link_to t('.new'), new_beneficiary_path %>

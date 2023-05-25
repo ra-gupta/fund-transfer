@@ -1,0 +1,45 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  beneficiaries:
+    create:
+      success: "Beneficiary was added sucessfully"
+    new:
+      title: "Add Beneficiary to the account"
+    index:
+      list: "Listing beneficiaries"
+      new: "Add New Beneficiary"      
+    form:
+      acc_number: "Account Number :"
+      nick_name: "Nick Name :"
+      add_beneficiary: "Add Beneficiary"
+      otp: "Send OTP"
+    beneficiary_list:
+      number: "Account Number"
+      name: "Nick Name"
+  layouts:
+    navigation:
+      add_new: "Add new beneficiary"
+      list_all: "List Beneficiaries"
+      logout: "Logout"
+    application:
+      

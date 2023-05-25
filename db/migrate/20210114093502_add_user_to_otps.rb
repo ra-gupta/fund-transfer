@@ -1,0 +1,5 @@
+class AddUserToOtps < ActiveRecord::Migration[5.0]
+  def change
+    add_reference :otps, :user, foreign_key: true
+  end
+end
